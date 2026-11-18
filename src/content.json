@@ -1,0 +1,444 @@
+{
+  "profile": {
+    "name": "Matthew King",
+    "handle": "rip",
+    "title": "Senior Platform & Security Engineer",
+    "focus": [
+      "Cloud Infrastructure",
+      "Cybersecurity",
+      "DevOps",
+      "Automation",
+      "AI Engineering"
+    ],
+    "tagline": "Manage, Design, Secure and Automate cloud platforms.",
+    "bio": "Self-taught and self-driven: I've built my career by learning every layer hands-on, from frontline support to engineering secure, automated enterprise platforms.",
+    "location": "Australia",
+    "email": "matthewjk@protonmail.com",
+    "contactLead": "Want to start a conversation, or just say hi? My inbox is open.",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/ripcrispy",
+        "icon": "github"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/matthewkingcode",
+        "icon": "linkedin"
+      },
+      {
+        "label": "Email",
+        "url": "mailto:matthewjk@protonmail.com",
+        "icon": "mail"
+      },
+      {
+        "label": "Ko-fi",
+        "url": "https://ko-fi.com/ripcrispy",
+        "icon": "coffee"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "label": "Experience",
+      "value": "16+ years"
+    }
+  ],
+  "projects": [
+    {
+      "title": "PS2 Dashboard Portfolio",
+      "blurb": "This site. A full-screen WebGL homage to early-2000s console menus, built with Three.js and zero frameworks.",
+      "tags": [
+        "TypeScript",
+        "Three.js",
+        "GLSL",
+        "Vite"
+      ],
+      "live": "./",
+      "year": "2026",
+      "repo": "https://github.com/ripcrispy/portfolio-website"
+    }
+  ],
+  "homelab": {
+    "servers": [
+      {
+        "name": "IRIS - PowerEdge R620",
+        "vendor": "Dell",
+        "role": "Virtualisation host · Proxmox VE",
+        "kind": "compute",
+        "specs": {
+          "CPU": "2× Intel Xeon",
+          "RAM": "384 GB ECC",
+          "Hypervisor": "Proxmox VE"
+        },
+        "services": [
+          {
+            "name": "AdGuard Home",
+            "category": "DNS",
+            "description": "Network-wide DNS filtering and ad blocking."
+          },
+          {
+            "name": "Ansible control node",
+            "category": "Automation",
+            "description": "Rocky Linux host running Ansible playbooks across the lab."
+          },
+          {
+            "name": "GitLab",
+            "category": "DevOps",
+            "description": "Self-hosted Git repositories and CI/CD pipelines."
+          },
+          {
+            "name": "GNS3",
+            "category": "Networking",
+            "description": "Network emulation for building and testing topologies."
+          },
+          {
+            "name": "NetBox",
+            "category": "Documentation",
+            "description": "Source of truth for IPAM, DCIM and the lab's inventory."
+          },
+          {
+            "name": "Nginx Proxy Manager",
+            "category": "Reverse proxy",
+            "description": "Proxy hosts and Let's Encrypt certificates through a web UI."
+          },
+          {
+            "name": "Portainer",
+            "category": "Containers",
+            "description": "Web UI for managing Docker containers and stacks."
+          },
+          {
+            "name": "Traefik",
+            "category": "Reverse proxy",
+            "description": "Dynamic reverse proxy and TLS for containerised apps."
+          },
+          {
+            "name": "WireGuard",
+            "category": "VPN",
+            "description": "Secure remote access into the lab."
+          }
+        ]
+      },
+      {
+        "name": "EOS - ProLiant DL360p Gen8",
+        "vendor": "HPE",
+        "role": "Virtualisation host · Proxmox VE",
+        "kind": "compute",
+        "specs": {
+          "CPU": "2× Intel Xeon",
+          "RAM": "384 GB ECC",
+          "Hypervisor": "Proxmox VE"
+        },
+        "services": [
+          {
+            "name": "Grafana",
+            "category": "Monitoring",
+            "description": "Dashboards for lab metrics and logs."
+          },
+          {
+            "name": "Home Assistant",
+            "category": "Automation",
+            "description": "Smart home automations and dashboards."
+          },
+          {
+            "name": "Prometheus",
+            "category": "Monitoring",
+            "description": "Metrics collection and alerting."
+          },
+          {
+            "name": "RetroNAS",
+            "category": "Storage",
+            "description": "Network storage for retro consoles and computers."
+          },
+          {
+            "name": "Uptime Kuma",
+            "category": "Monitoring",
+            "description": "Uptime checks and status notifications."
+          }
+        ]
+      },
+      {
+        "name": "NYX - Custom Server",
+        "vendor": "Custom build",
+        "role": "Media & game server · Unraid",
+        "kind": "compute",
+        "specs": {
+          "CPU": "Intel Core i7-3770K",
+          "RAM": "32 GB",
+          "Storage": "4 TB",
+          "GPU": "NVIDIA GTX 980",
+          "OS": "Unraid"
+        },
+        "services": [
+          {
+            "name": "Jellyfin",
+            "category": "Media",
+            "description": "Open-source media streaming."
+          },
+          {
+            "name": "Plex",
+            "category": "Media",
+            "description": "Media streaming with GPU-accelerated transcoding."
+          },
+          {
+            "name": "Pterodactyl",
+            "category": "Games",
+            "description": "Game server panel hosting Minecraft, Valheim and Quake III Arena."
+          }
+        ]
+      },
+      {
+        "name": "3PAR",
+        "vendor": "HPE",
+        "role": "Direct-attached storage",
+        "kind": "storage",
+        "specs": {
+          "Capacity": "50 TB",
+          "Interface": "Fibre Channel"
+        }
+      },
+      {
+        "name": "Pi 4 Model B",
+        "vendor": "Raspberry Pi",
+        "role": "Edge DNS",
+        "kind": "edge",
+        "specs": {
+          "RAM": "8 GB",
+          "Storage": "32 GB microSD"
+        },
+        "services": [
+          {
+            "name": "AdGuard Home",
+            "category": "DNS",
+            "description": "Network-wide DNS filtering and ad blocking."
+          }
+        ]
+      },
+      {
+        "name": "EX2200-24T-4G",
+        "vendor": "Juniper",
+        "role": "Core switch",
+        "kind": "network",
+        "specs": {
+          "Ports": "24× 1 GbE + 4× SFP"
+        }
+      },
+      {
+        "name": "Dream Machine",
+        "vendor": "Ubiquiti",
+        "role": "Gateway & Wi-Fi · UniFi",
+        "kind": "network"
+      },
+      {
+        "name": "FortiWiFi 60E",
+        "vendor": "Fortinet",
+        "role": "Firewall · FortiGate",
+        "kind": "network"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "role": "Information Systems Engineer (L3)",
+      "org": "Global IT services provider",
+      "start": "Feb 2025",
+      "end": "Now"
+    },
+    {
+      "role": "Cyber Security Engineer (L2)",
+      "org": "Global IT services provider",
+      "start": "Aug 2020",
+      "end": "Mar 2025"
+    },
+    {
+      "role": "Operator",
+      "org": "Food manufacturing",
+      "start": "Jul 2018",
+      "end": "Aug 2020"
+    },
+    {
+      "role": "Network Technician",
+      "org": "IT & communications provider",
+      "start": "Nov 2013",
+      "end": "Sep 2017"
+    },
+    {
+      "role": "IT Helpdesk Technician",
+      "org": "Telecommunications provider",
+      "start": "Feb 2010",
+      "end": "Oct 2013"
+    },
+    {
+      "role": "Freelance Web Developer",
+      "org": "Self-employed",
+      "start": "Dec 2007",
+      "end": "Aug 2010"
+    }
+  ],
+  "skills": {
+    "AI Engineering": [
+      {
+        "name": "LLM APIs",
+        "level": 95
+      },
+      {
+        "name": "Python ML",
+        "level": 60
+      }
+    ],
+    "Automation": [
+      {
+        "name": "Ansible",
+        "level": 70
+      },
+      {
+        "name": "BackBox",
+        "level": 50
+      },
+      {
+        "name": "NetBox",
+        "level": 85
+      },
+      {
+        "name": "StackStorm",
+        "level": 90
+      },
+      {
+        "name": "Tanium",
+        "level": 45
+      }
+    ],
+    "Cloud": [
+      {
+        "name": "AWS",
+        "level": 60
+      },
+      {
+        "name": "Azure",
+        "level": 75
+      }
+    ],
+    "Development": [
+      {
+        "name": "C",
+        "level": 85
+      },
+      {
+        "name": "C++",
+        "level": 90
+      },
+      {
+        "name": "Groovy",
+        "level": 95
+      },
+      {
+        "name": "JavaScript",
+        "level": 70
+      },
+      {
+        "name": "Python",
+        "level": 95
+      },
+      {
+        "name": "Rust",
+        "level": 60
+      }
+    ],
+    "DevOps": [
+      {
+        "name": "Docker",
+        "level": 80
+      },
+      {
+        "name": "Linux",
+        "level": 90
+      },
+      {
+        "name": "Terraform",
+        "level": 60
+      }
+    ],
+    "Observability": [
+      {
+        "name": "LogicMonitor",
+        "level": 95
+      },
+      {
+        "name": "OpenMetrics",
+        "level": 60
+      },
+      {
+        "name": "SNMP",
+        "level": 95
+      },
+      {
+        "name": "SSH",
+        "level": 95
+      },
+      {
+        "name": "WMI",
+        "level": 75
+      }
+    ],
+    "Security": [
+      {
+        "name": "AAA",
+        "level": 70
+      },
+      {
+        "name": "CIA",
+        "level": 60
+      },
+      {
+        "name": "EDR/XDR",
+        "level": 40
+      },
+      {
+        "name": "IAM",
+        "level": 60
+      },
+      {
+        "name": "NDR",
+        "level": 50
+      },
+      {
+        "name": "SIEM",
+        "level": 75
+      },
+      {
+        "name": "WAF",
+        "level": 80
+      }
+    ]
+  },
+  "about": {
+    "lead": "The person behind the terminal.",
+    "paragraphs": [
+      "I've been hands-on with computers for as long as I can remember, from modding my favourite games in my young teen years, tearing apart websites and applications in my mid-teens, freelance web development in 2007, through helpdesk, networking and cyber security, to engineering platforms today.",
+      "Outside of work I'm happiest building things: programming side projects, reverse engineering, a homelab that's grown into a small rack, and old hardware and retro consoles like the Commodore 64 in this photo. Retro machines are a reminder that every abstraction we use today was once a few lines of Assembly or, in this case, BASIC."
+    ],
+    "interests": [
+      "Programming",
+      "Reverse Engineering",
+      "Retro computing",
+      "Retro Gaming",
+      "Game development",
+      "Homelab",
+      "Self-hosting",
+      "Automation"
+    ],
+    "image": {
+      "src": "./images/about-c64-800.webp",
+      "srcset": "./images/about-c64-480.webp 480w, ./images/about-c64-800.webp 800w",
+      "alt": "Matthew typing a BASIC program on a Commodore 64, lit by the blue glow of a CRT monitor.",
+      "caption": "10 PRINT \"HELLO\" · Commodore 64",
+      "width": 800,
+      "height": 989
+    }
+  },
+  "github": {
+    "user": "ripcrispy",
+    "maxRepos": 6,
+    "exclude": []
+  }
+}
